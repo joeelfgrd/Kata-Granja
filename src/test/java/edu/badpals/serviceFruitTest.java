@@ -2,18 +2,20 @@ package edu.badpals;
 
 import java.util.Optional;
 
-import javax.inject.Inject;
 import javax.transaction.Transactional;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import edu.badpals.Domain.Fruit;
+import io.quarkus.test.junit.QuarkusTest; // Add this import statement
 import io.quarkus.test.junit.QuarkusTest;
 
 /**
  * Component Unit testing
  */
+
+
 
 @QuarkusTest
 @Transactional

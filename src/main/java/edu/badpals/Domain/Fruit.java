@@ -17,10 +17,13 @@ public class Fruit {
     private Long id;
 
     @Column(name = "name")
-    private String name;
+    private String name="";
 
-    
-    private String description;
+    @Column(name = "description")
+    private String description="";
+
+    @Column(name = "farmer_id")
+    public Farmer farmer;
 
 
 
