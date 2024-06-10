@@ -4,6 +4,8 @@ import lombok.NoArgsConstructor;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Column;
@@ -21,8 +23,8 @@ public class Fruit {
 
     @Column(name = "description")
     private String description="";
-
-    @Column(name = "farmer_id")
+    @ManyToOne
+    @JoinColumn(name = "farmer_id")
     public Farmer farmer;
 
 

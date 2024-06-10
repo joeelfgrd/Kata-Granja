@@ -6,10 +6,10 @@ import javax.transaction.Transactional;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
-
+import javax.inject.Inject;
 import edu.badpals.Domain.Fruit;
 import io.quarkus.test.junit.QuarkusTest; // Add this import statement
-import io.quarkus.test.junit.QuarkusTest;
+
 
 /**
  * Component Unit testing
@@ -19,10 +19,10 @@ import io.quarkus.test.junit.QuarkusTest;
 
 @QuarkusTest
 @Transactional
-public class ServiceFruitTest {
+public class serviceFruitTest {
 
     @Inject
-    ServiceFruit service;
+    serviceFruitTest service;
 
     // @Test de jupiter, no el de junit
     @Test
